@@ -1,16 +1,7 @@
 # animal_age
 
-A new Flutter project.
+A new Flutter project to show some skills we learned during the course.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It basically is a 2 screens app. On the Home screen you can input the name of an animal and on the second you get it's lifespan. The latter is getting fetched bei the Wolfram|Alpha Shortanswer API and the corresponding image is downloaded via the Unsplash API. It has a nice simple workaround for errors and uses Googlefonts for the theme and custom styling. 
