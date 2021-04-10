@@ -1,0 +1,96 @@
+{
+	"queryresult":{
+		"success":true,
+		"error":false,
+		"numpods":1,
+		"datatypes":"Species",
+		"timedout":"",
+		"timedoutpods":"",
+		"timing":0.738,
+		"parsetiming":0.265,
+		"parsetimedout":false,
+		"recalculate":"",
+		"id":"MSP7391df7d7cb43i5ch8400001ghc59cac6cc7age",
+		"host":"https:\/\/www5b.wolframalpha.com",
+		"server":"38",
+		"related":"https:\/\/www5b.wolframalpha.com\/api\/v1\/relatedQueries.jsp?id=MSPa7401df7d7cb43i5ch84000029i5e8dd703cd4d51769287577686057616",
+		"version":"2.6",
+		"inputstring":"age frog",
+		"pods":[
+			{
+				"title":"Result",
+				"scanner":"Data",
+				"id":"Result",
+				"position":100,
+				"error":false,
+				"numsubpods":1,
+				"primary":true,
+				"subpods":[
+					{
+						"title":"",
+						"microsources":{
+							"microsource":"SpeciesData"
+						},
+						"datasources":{
+							"datasource":[
+								"AmazingNumbers",
+								"TheWikimediaFoundationIncWikipedia"
+							]
+						},
+						"plaintext":"(5 to 15) years"
+					}
+				],
+				"expressiontypes":{
+					"name":"Default"
+				}
+			}
+		],
+		"assumptions":[
+			{
+				"type":"SubCategory",
+				"word":"frog",
+				"template":"Assuming ${desc1}. Use ${desc2} instead",
+				"count":3,
+				"values":[
+					{
+						"name":"Order:Anura",
+						"desc":"frogs and toads",
+						"input":"*DPClash.SpeciesE.frog-_*Order%3AAnura-"
+					},
+					{
+						"name":"Species:RanaEsculenta",
+						"desc":"edible frog",
+						"input":"*DPClash.SpeciesE.frog-_*Species%3ARanaEsculenta-"
+					},
+					{
+						"name":"Species:RanaPipiens",
+						"desc":"northern leopard frog",
+						"input":"*DPClash.SpeciesE.frog-_*Species%3ARanaPipiens-"
+					}
+				]
+			},
+			{
+				"type":"SubCategory",
+				"word":"age",
+				"template":"Assuming ${desc1}. Use ${desc2} instead",
+				"count":2,
+				"values":[
+					{
+						"name":"TypicalAge",
+						"desc":"lifespan",
+						"input":"*DPClash.SpeciesDataExtrasPropertyP.age-_*TypicalAge-"
+					},
+					{
+						"name":"MaximumAge",
+						"desc":"maximum recorded lifespan",
+						"input":"*DPClash.SpeciesDataExtrasPropertyP.age-_*MaximumAge-"
+					}
+				]
+			}
+		],
+		"sources":{
+			"url":"https:\/\/www5b.wolframalpha.com\/sources\/SpeciesDataSourceInformationNotes.html",
+			"text":"Species data"
+		}
+	}
+}
