@@ -83,8 +83,6 @@ class ResultView extends StatelessWidget {
                   ),
                   TextButton(
                     onPressed: () {
-                      // Later try to separate this ? What about "context" ?
-                      // Navigator.pushNamed(context, HomeViewRoute);
                       Navigator.pop(context, 'fromResult');
                     },
                     child: Text(

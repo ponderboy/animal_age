@@ -13,7 +13,7 @@ import 'dart:async';
 /// but I found that approach here:
 /// https://blog.gskinner.com/archives/2020/02/flutter-widgetview-a-simple-separation-of-layout-and-logic.html
 ///
-///
+////////////////////////////////////////////////////////
 /// Widget defines external parameters
 ////////////////////////////////////////////////////////
 class Home extends StatefulWidget {
@@ -94,8 +94,8 @@ class _HomeController extends State<Home> {
 
 // go to the Result View and pass over Name, Age and ImgUrl
     Navigator.pushNamed(
-      context, ResultViewRoute,
-      // arguments: '$animalName',
+      context,
+      ResultViewRoute,
       arguments: ResultViewArguments(
         '$_animalName',
         '$_animalAge',

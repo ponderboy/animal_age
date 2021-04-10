@@ -1,8 +1,4 @@
 import 'package:http/http.dart' as http;
-import 'dart:convert';
-
-// TODO: Error Managing! If name wrong or no result, what then??
-//
 
 bool isFetchError = false;
 
@@ -19,8 +15,6 @@ Future<String> fetchData(String url) async {
     // throw Exception('Failed to load: Error: ${response.reasonPhrase}');
 
     // simple workaround to not freeze the app
-    // at least works for wolfram
-    print('Failed to load: Error: ${response.reasonPhrase}');
     return ', well, we could not figure that out, sorry! Maybe try again?!';
   }
 }
